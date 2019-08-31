@@ -2,7 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Quote from './Quote/Quote'
+import Quote from './Quote/Quote';
+import Quotes from './Quotes/Quotes';
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                 character="Ralph Wiggum"
                 image="https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FRalphWiggum.png?1497567511523"
             />
+            <Quotes />
         </div>
     );
 }
