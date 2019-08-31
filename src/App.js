@@ -25,6 +25,8 @@ function App() {
             /> */}
             <Quotes />
             <Lamp />
+            <Lamp on />
+
         </div>
     );
 }
