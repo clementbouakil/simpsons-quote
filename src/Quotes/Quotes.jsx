@@ -26,7 +26,7 @@ const quotes = [
 const Quotes = () => (
     <div>
         {quotes.map(quote => (
-            <img src={quote.image} />
+            <img src={quote.image} alt={quote.character} />
         ))}
     </div>
 );
