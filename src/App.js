@@ -5,9 +5,30 @@ import './App.css';
 // import Quote from './Quote/Quote';
 // import Quotes from './Quotes/Quotes';
 // import Lamp from './Lamp/Lamp';
-import NameForm from './NameForm/NameForm';
+// import NameForm from './NameForm/NameForm';
+import GenerateEmployee from './GenerateEmployee/GenerateEmployee';
+import DisplayEmployee from './DisplayEmployee/DisplayEmployee';
 
 function App() {
+
+    const sampleEmployee = {
+        gender: "male",
+        name: {
+            title: "MR",
+            first: "Clément",
+            last: "Bouakil",
+        },
+        location: {
+            street: "5 allée des veuves",
+            city: "Tinqueux",
+            postcode: "51430",
+        },
+        email: "bouakil.clement.pro@gmail.com",
+        picture: {
+            medium: "https://avatars0.githubusercontent.com/u/49914045?s=460&v=4",
+        },
+    }
+
     return (
         <div className="App">
             {/* <header className="App-header">
@@ -26,8 +47,10 @@ function App() {
             />
             <Quotes />
             <Lamp />
-            <Lamp on /> */}
-            <NameForm />
+            <Lamp on />
+            <NameForm /> */}
+            <GenerateEmployee />
+            <DisplayEmployee employee={sampleEmployee} />
         </div>
     );
 }
