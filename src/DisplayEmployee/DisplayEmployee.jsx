@@ -8,15 +8,19 @@ const DisplayEmployee = ({ employee }) => {
                 <li>Gender : {employee.gender}</li>
                 <li>
                     Name :
+                    {' '}
                     {employee.name.title}
+                    {' '}
                     {employee.name.last}
                     {' '}
                     {employee.name.first}
                 </li>
                 <li>Email : {employee.email}</li>
                 <li>
-                    location :
+                    Location :
+                    {' '}
                     {employee.location.street}
+                    {' '}
                     {employee.location.postcode}
                     {' '}
                     {employee.location.city}
