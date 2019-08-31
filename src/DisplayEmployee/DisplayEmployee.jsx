@@ -3,7 +3,7 @@ import React from 'react';
 const DisplayEmployee = ({ employee }) => {
     return (
         <div className="DisplayEmployee">
-            <img src={employee.picture.medium} alt="picture" />
+            <img src={employee.picture.medium} alt={employee.name.last} />
             <ul>
                 <li>Gender : {employee.gender}</li>
                 <li>
