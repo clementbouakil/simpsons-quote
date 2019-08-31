@@ -48,7 +48,7 @@ const quotes = [
 const Quotes = () => (
     <div>
         {quotes.map(quote => (
-            <Quote {...quote} />
+            <Quote {...quote} key={quote.id} />
         ))}
     </div>
 );
