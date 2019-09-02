@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 
-import DisplayQuote from "./DisplayQuote/DisplayQuote";
-import GenerateQuote from "./GenerateQuote/GenerateQuote";
+import Counter from './Counter/Counter';
 
 class App extends Component {
   constructor(props) {
@@ -34,8 +33,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <GenerateQuote selectQuote={() => this.getQuote()} />
-        <DisplayQuote quote={this.state.quote} />
+        {/* <GenerateQuote selectQuote={() => this.getQuote()} />
+        <DisplayQuote quote={this.state.quote} /> */}
+        <Counter />
       </div>
     );
   }
