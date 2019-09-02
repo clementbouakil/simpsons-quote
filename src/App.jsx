@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 // import logo from './logo.svg';
 import './App.css';
 
@@ -63,7 +62,7 @@ class App extends Component {
             .then(response => response.json())
             .then(data => {
                 this.setState({
-                    employee: data[0],
+                    quote: data[0],
                 });
             });
     }
